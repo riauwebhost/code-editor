@@ -296,7 +296,7 @@ function App() {
   return (
     <div className={dark ? 'app dark' : 'app'}>
       <header className="toolbar">
-        <div className="brand">Code Editor {isDirty ? '•' : '✓'}</div>
+        <div className="brand">Purwadi Code Editor {isDirty ? '•' : '👨‍💻'}</div>
         <div className="tools">
           <label>
             Theme
