@@ -1,0 +1,6 @@
+:root { font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; }
+html, body, #root { height: 100%; margin: 0; overflow: hidden; }
+body { background: #0f172a; color: #e2e8f0; }
+button { border: 1px solid #334155; background: #1e293b; color: #e2e8f0; padding: 6px 12px; border-radius: 6px; }
+button:hover { border-color: #3b82f6; }
+input, select { background: #0b1220; border: 1px solid #334155; color: #e2e8f0; padding: 6px 8px; border-radius: 6px; }

@@ -1,0 +1,31 @@
+.app { height: 100%; display: grid; grid-template-rows: 48px 1fr; overflow: hidden; }
+.app.dark { background: #0f172a; color: #e2e8f0; }
+.toolbar { display: flex; align-items: center; justify-content: space-between; padding: 0 12px; border-bottom: 1px solid #334155; background: #0b1220; gap: 8px; flex-wrap: wrap; }
+.brand { font-weight: 700; }
+.tools { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.workspace { display: grid; grid-template-columns: 50% 10px 50%; height: calc(100vh - 48px); width: 100%; overflow: hidden; }
+.panes { display: grid; padding: 8px; gap: 8px; overflow: hidden; min-height: 0; min-width: 0; }
+.pane { border: 1px solid #334155; border-radius: 8px; overflow: hidden; background: #0b1220; display: grid; grid-template-rows: 24px 1fr; min-height: 0; min-width: 0; }
+.preview { display: grid; grid-template-rows: 1fr 200px; min-width: 0; }
+.pane { border: 1px solid #334155; border-radius: 8px; overflow: hidden; background: #0b1220; display: grid; grid-template-rows: 24px 1fr; }
+.pane-title { padding: 6px 8px; border-bottom: 1px solid #334155; background: #0f172a; font-size: 12px; opacity: 0.8; }
+.vGutter { height: 6px; cursor: row-resize; background: transparent; border-top: 1px solid #334155; border-bottom: 1px solid #334155; border-radius: 4px; user-select: none; }
+.vGutter:hover { background: #0f172a; }
+.resources { display: grid; grid-template-columns: 1fr; gap: 6px; margin-top: 8px; }
+.gutter { cursor: col-resize; background: transparent; border-left: 1px solid #334155; border-right: 1px solid #334155; user-select: none; }
+.gutter:hover { background: #0f172a; }
+.preview { display: grid; grid-template-rows: 1fr 200px; }
+.preview iframe { width: 100%; height: 100%; border: none; background: white; }
+.viewport { height: 100%; margin: 0 auto; border: 1px solid #334155; border-radius: 10px; background: #0b1220; box-shadow: 0 0 0 1px #1f2937 inset; overflow: hidden; }
+.console { border-top: 1px solid #334155; background: #0b1220; }
+.console-title { padding: 6px 8px; border-bottom: 1px solid #334155; font-size: 12px; opacity: 0.8; }
+.console-body { padding: 6px 8px; height: 100%; overflow: auto; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 12px; }
+.row { padding: 2px 0; }
+.row.warn { color: #f59e0b; }
+.row.error { color: #ef4444; }
+
+.toast { position: fixed; bottom: 16px; right: 16px; background: #10b981; color: #0b1220; padding: 8px 12px; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.25); font-weight: 600; }
+
+@media (max-width: 900px) {
+  .workspace { grid-template-columns: 100% 0 0; }
+}
